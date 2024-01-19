@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-NEZHA_SERVER=${NEZHA_SERVER:-'nz.f4i.cn'}
-NEZHA_PORT=${NEZHA_PORT:-'5555'}
-NEZHA_KEY=${NEZHA_KEY:-'Pr0xBHTAJvPgQvgZGD'}
+NEZHA_SERVER=${NEZHA_SERVER:-''}
+NEZHA_PORT=${NEZHA_PORT:-''}
+NEZHA_KEY=${NEZHA_KEY:-''}
 TLS=${TLS:-''}
 UUID=${UUID:-'6a43da28-031b-4bc8-a521-9728b073b32b'}
 VLESS_WSPATH=${VLESS_WSPATH:-'/vless'}
@@ -94,7 +94,7 @@ generate_config() {
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls"
@@ -121,7 +121,7 @@ generate_config() {
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls"
@@ -148,7 +148,7 @@ generate_config() {
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls"
@@ -176,7 +176,7 @@ generate_config() {
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls"
